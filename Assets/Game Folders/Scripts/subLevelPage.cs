@@ -78,6 +78,23 @@ public class subLevelPage : Page
             SetCharacter(3);
         });
 
+        selectors[0].inputPlayerName.onValueChanged.AddListener((newName) =>
+        {
+            data[0].characterName = newName;
+        });
+        selectors[1].inputPlayerName.onValueChanged.AddListener((newName) =>
+        {
+            data[1].characterName = newName;
+        });
+        selectors[2].inputPlayerName.onValueChanged.AddListener((newName) =>
+        {
+            data[2].characterName = newName;
+        });
+        selectors[3].inputPlayerName.onValueChanged.AddListener((newName) =>
+        {
+            data[3].characterName = newName;
+        });
+
         SetPlayer(false, 1);
         SetPlayer(false, 2);
         SetPlayer(false, 3);
@@ -109,12 +126,12 @@ public class subLevelPage : Page
 
         if (selectors[n].isPlayer)
         {
-            selectors[n].playerTypeText.text = "<  Pemain  >";
+            selectors[n].playerTypeText.text = "Pemain";
             data[n].tipe = PlayerType.Pemain;
         }
         else
         {
-            selectors[n].playerTypeText.text = "<  Komputer  >";
+            selectors[n].playerTypeText.text = "Komputer";
             data[n].tipe = PlayerType.Ai;
         }
     }
@@ -128,7 +145,9 @@ public class CharacterSelector
 
     public Toggle playerType;
     public TMP_Text playerTypeText;
+    
     public Button playerName;
+    public TMP_InputField inputPlayerName;
 
     public bool isPlayer = true;
     public int selectedCharacter = 0;

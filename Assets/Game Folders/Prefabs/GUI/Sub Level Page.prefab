@@ -307,7 +307,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298359165191906408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -468,7 +468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1735326765620614957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -910,7 +910,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: "Pemain 3\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
   m_sharedMaterial: {fileID: -6442174763145667746, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: "Pemain 2\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
   m_sharedMaterial: {fileID: -6442174763145667746, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
@@ -2057,7 +2057,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0.7529412}
-  m_Text: 
+  m_Text: Pemain 2
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -2134,7 +2134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: "Pemain 1\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
   m_sharedMaterial: {fileID: -6442174763145667746, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
@@ -2841,7 +2841,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5057045928724208295}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -3815,24 +3815,28 @@ MonoBehaviour:
     playerType: {fileID: 7818042893209247984}
     playerTypeText: {fileID: 1340346324530621252}
     playerName: {fileID: 943288076374806710}
+    inputPlayerName: {fileID: 4875849925030848437}
     isPlayer: 1
     selectedCharacter: 0
   - potrait: {fileID: 5986316077454793718}
     playerType: {fileID: 5778526544064007719}
     playerTypeText: {fileID: 6082100797657633885}
     playerName: {fileID: 3011395551845988181}
+    inputPlayerName: {fileID: 2820872174785949582}
     isPlayer: 0
     selectedCharacter: 1
   - potrait: {fileID: 4581970200929105471}
     playerType: {fileID: 3914882920928200156}
     playerTypeText: {fileID: 2969331374409123115}
     playerName: {fileID: 1658923996743452039}
+    inputPlayerName: {fileID: 7525502479290609286}
     isPlayer: 0
     selectedCharacter: 2
   - potrait: {fileID: 972837794815078854}
     playerType: {fileID: 1466946685444630630}
     playerTypeText: {fileID: 1431159312932587449}
     playerName: {fileID: 6973986050657255927}
+    inputPlayerName: {fileID: 2132293148008366630}
     isPlayer: 0
     selectedCharacter: 3
   characterPrefabs:
@@ -4119,7 +4123,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6638448179165398132}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -5191,7 +5195,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0.7529412}
-  m_Text: 
+  m_Text: Pemain 4
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -5578,7 +5582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5736,7 +5740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u200B"
+  m_text: "Pemain 4\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
   m_sharedMaterial: {fileID: -6442174763145667746, guid: 4b3dba876db7b9f469caffa2604613e9, type: 2}
@@ -6293,7 +6297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6471,7 +6475,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0.7529412}
-  m_Text: 
+  m_Text: Pemain 1
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -6725,7 +6729,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 0.7529412}
-  m_Text: 
+  m_Text: Pemain 3
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
