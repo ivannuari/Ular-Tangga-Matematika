@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7239559799361087567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7239559799361087564}
+  - component: {fileID: 7239559799361087565}
+  m_Layer: 0
+  m_Name: == Audio Manager ==
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7239559799361087564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239559799361087567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7239559799923346994}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7239559799361087565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239559799361087567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6a8ed1b26c37749b7d02b8f31a54d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - nama: BGM
+    type: 0
+    klip: {fileID: 8300000, guid: d9da41604952e64478874b55dd12bc37, type: 3}
+    vol: 0.4
+    berulang: 1
+    source: {fileID: 0}
+  - nama: walk
+    type: 1
+    klip: {fileID: 8300000, guid: 2f6266a9413522d469676595b13062a2, type: 3}
+    vol: 0.7
+    berulang: 0
+    source: {fileID: 0}
+  - nama: klik
+    type: 1
+    klip: {fileID: 8300000, guid: bf326a5556b7fac499110a8b3bbd6674, type: 3}
+    vol: 0.8
+    berulang: 0
+    source: {fileID: 0}
+  - nama: naik
+    type: 1
+    klip: {fileID: 8300000, guid: 4c591cc4442fc3c439383224256a23db, type: 3}
+    vol: 0.7
+    berulang: 0
+    source: {fileID: 0}
+  - nama: kocok
+    type: 1
+    klip: {fileID: 8300000, guid: 32e263ecc4788be4dbae3bddbe776d02, type: 3}
+    vol: 0.7
+    berulang: 0
+    source: {fileID: 0}
+  - nama: turun
+    type: 1
+    klip: {fileID: 8300000, guid: 14c5a54bcb2baa148bc179e25981b41c, type: 3}
+    vol: 0.7
+    berulang: 0
+    source: {fileID: 0}
+  audioVolume: 0.4
+  sfxVolume: 0.75
+--- !u!1 &7239559799923347021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7239559799923346994}
+  - component: {fileID: 7239559799923346995}
+  m_Layer: 0
+  m_Name: == Game Manager ==
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7239559799923346994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239559799923347021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7239559799361087564}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7239559799923346995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7239559799923347021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf15e1293f1e8944db625dae9dc17058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  jumlahPemain: 0
+  playerDatas:
+  - tipe: 0
+    characterNumber: 0
+    characterName: 
+    characterPosition: 0
+    characterSkin: 0
+  - tipe: 1
+    characterNumber: 1
+    characterName: 
+    characterPosition: 0
+    characterSkin: 0
+  - tipe: 1
+    characterNumber: 2
+    characterName: 
+    characterPosition: 0
+    characterSkin: 0
+  - tipe: 1
+    characterNumber: 3
+    characterName: 
+    characterPosition: 0
+    characterSkin: 0
+  saveDataFiles:
+    allSaveData: []
