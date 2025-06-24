@@ -59,11 +59,16 @@ public class GameSetting : MonoBehaviour
     }
     public void CheckJawabanBenar(bool benar)
     {
-        bool _benarCondition = benar && _currentType == TileType.NaikTangga || benar && _currentType == TileType.NaikPipa || !benar && _currentType == TileType.Turun; 
+        bool _naikTangga = benar && _currentType == TileType.NaikTangga;
+        bool _naikPipa = benar && _currentType == TileType.NaikPipa;
+        bool _turunUlar = !benar && _currentType == TileType.Turun;
 
+        bool _benarCondition = _naikTangga || _naikPipa || _turunUlar;
+
+        //Debug.LogWarning($"CHECK JAWABAN BENAR: {benar}, KONDISI BENAR: {_benarCondition}, CURRENT TYPE: {_currentType}");
         if(_benarCondition)
         {
-            pemains[currentPlayer].BerhasilMenjawab(_currentType);
+            pemains[currentPlayer].BerhasilMenjawab(_currentType, true);
             if(_currentPlayer == PlayerType.Pemain)
             {
                 score += 20;
@@ -71,9 +76,9 @@ public class GameSetting : MonoBehaviour
         }
         else
         {
-            pemains[currentPlayer].BerhasilMenjawab(_currentType , false);
-            
+            pemains[currentPlayer].SalahMenjawab(_currentType);
         }
+
         OnScoreUpdate?.Invoke(score);
     }
 

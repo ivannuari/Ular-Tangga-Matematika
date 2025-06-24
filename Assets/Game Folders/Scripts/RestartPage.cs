@@ -14,6 +14,7 @@ public class RestartPage : Page
         yesButton.onClick.AddListener(() =>
         {
             Time.timeScale = 1f;
+            GameManager.Instance.RestartGameplay();
             ChangeScene("Gameplay");
         });
         noButton.onClick.AddListener(() =>

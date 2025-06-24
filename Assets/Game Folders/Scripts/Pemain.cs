@@ -109,13 +109,24 @@ public class Pemain : MonoBehaviour
                 StartCoroutine(NaikPipa());
                 break;
             case TileType.Turun:
+                AudioManager.Instance.MainkanSuara("turun");
                 if(!benar)
                 {
-                    AudioManager.Instance.MainkanSuara("turun");
                 }
                 StartCoroutine(TurunUlar());
                 break;
         }
+    }
+
+    public void SalahMenjawab(TileType currentType)
+    {
+        StartCoroutine(EndTurn());
+    }
+
+    IEnumerator EndTurn()
+    {
+        yield return new WaitForSeconds(2f);
+        GameSetting.Instance.EndTurn();
     }
 
     IEnumerator TurunUlar()
@@ -216,4 +227,6 @@ public class Pemain : MonoBehaviour
         data.characterPosition = 0;
         transform.position = GameSetting.Instance.GetSpawnerPosition(data.characterNumber).position;
     }
+
+    
 }

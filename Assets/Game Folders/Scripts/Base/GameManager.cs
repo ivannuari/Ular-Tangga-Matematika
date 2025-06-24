@@ -58,6 +58,14 @@ public class GameManager : MonoBehaviour
         saveDataFiles = JsonUtility.FromJson<SaveData>(json);
     }
 
+    public void RestartGameplay()
+    {
+        foreach (var item in playerDatas)
+        {
+            item.characterPosition = 0;
+        }
+    }
+
     public void SetPlayersData(CharacterData[] data)
     {
         playerDatas = data;

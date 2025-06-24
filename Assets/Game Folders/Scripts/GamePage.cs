@@ -87,6 +87,7 @@ public class GamePage : Page
             case PlayerType.Ai:
                 label_giliran.text = $"Giliran : AI";
                 b_dadu.interactable = false;
+                if (!gameObject.activeInHierarchy) { return; }
                 StartCoroutine(AiWalk());
                 break;
         }
