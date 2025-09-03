@@ -26854,63 +26854,72 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allSoals:
-  - soal: 5 + 7 =
+  - tipeSoal: 1
+    soal: 5 + 7 =
     opsi:
     - 10
     - 13
     - 12
     - 11
     jawaban: 2
-  - soal: 9 + 4 =
+  - tipeSoal: 1
+    soal: 9 + 4 =
     opsi:
     - 10
     - 13
     - 12
     - 11
     jawaban: 1
-  - soal: Berapakah 15 x 5?
+  - tipeSoal: 3
+    soal: Berapakah 15 x 5?
     opsi:
     - 75
     - 125
     - 50
     - 150
     jawaban: 0
-  - soal: 9 - 2 =
+  - tipeSoal: 2
+    soal: 9 - 2 =
     opsi:
     - 7
     - 8
     - 12
     - 11
     jawaban: 0
-  - soal: 9 + 4 =
+  - tipeSoal: 1
+    soal: 9 + 4 =
     opsi:
     - 10
     - 13
     - 12
     - 11
     jawaban: 1
-  - soal: 12 - 7 =
+  - tipeSoal: 2
+    soal: 12 - 7 =
     opsi:
     - 7
     - 6
     - 4
     - 5
     jawaban: 3
-  - soal: 3 x 6 =
+  - tipeSoal: 3
+    soal: 3 x 6 =
     opsi:
     - 9
     - 15
     - 21
     - 18
     jawaban: 2
-  - soal: 24 / 4 =
+  - tipeSoal: 4
+    soal: 24 / 4 =
     opsi:
     - 7
     - 6
     - 8
     - 9
     jawaban: 1
-  - soal: 7 x 7 =
+  - tipeSoal: 3
+    soal: 7 x 7 =
     opsi:
     - 25
     - 64
@@ -27315,87 +27324,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121723632}
   m_CullTransparentMesh: 1
---- !u!1001 &1866028823600230926
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346994, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346995, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: jumlahPemain
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346995, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: playerDatas.Array.data[0].characterName
-      value: Ayam
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346995, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: playerDatas.Array.data[1].characterName
-      value: Badak
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346995, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: playerDatas.Array.data[2].characterName
-      value: Kelinci
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923346995, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: playerDatas.Array.data[3].characterName
-      value: Babi
-      objectReference: {fileID: 0}
-    - target: {fileID: 7239559799923347021, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
-      propertyPath: m_Name
-      value: == Game Manager ==
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f2da6f05f2e162843a69c887692e9045, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -27416,4 +27344,3 @@ SceneRoots:
   - {fileID: 1104025488}
   - {fileID: 163300105}
   - {fileID: 2095166736}
-  - {fileID: 1866028823600230926}

@@ -8,10 +8,13 @@ public class subLevelPage : Page
     [SerializeField] private Button b_home;
     [SerializeField] private Button b_mulai;
 
+    [SerializeField] private TMP_Dropdown dropdownTipeSoal;
+
+    [SerializeField] private GameObject inputNamaPemainObject;
+
     [SerializeField] private CharacterSelector[] selectors;
 
     [SerializeField] private GameObject[] characterPrefabs;
-    //[SerializeField] private CharacterSO[] allCharacterDataSO;
     [SerializeField] private CharacterData[] data;
 
     private MainMenuCharacterSelector mainMenuCharacterSelector;
@@ -35,12 +38,23 @@ public class subLevelPage : Page
     protected override void Start()
     {
         base.Start();
+
+        inputNamaPemainObject.SetActive(true);
     
         b_home.onClick.AddListener(() => GameManager.Instance.ChangeState(GameState.Level));
         b_mulai.onClick.AddListener(() =>
         {
             GameManager.Instance.SetPlayersData(data);
             ChangeScene("Gameplay");
+        });
+
+        dropdownTipeSoal.onValueChanged.AddListener((tipe) =>
+        {
+            if(tipe == 0) { GameManager.Instance.currentSoalType = TipeSoal.Campuran; }
+            if(tipe == 1) { GameManager.Instance.currentSoalType = TipeSoal.Penjumlahan; }
+            if(tipe == 2) { GameManager.Instance.currentSoalType = TipeSoal.Pengurangan; }
+            if(tipe == 3) { GameManager.Instance.currentSoalType = TipeSoal.Perkalian; }
+            if(tipe == 4) { GameManager.Instance.currentSoalType = TipeSoal.Pembagian; }
         });
 
         selectors[1].playerType.onValueChanged.AddListener((isPlayer) =>

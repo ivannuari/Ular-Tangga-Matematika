@@ -33,5 +33,10 @@ public class ResultPage : Page
     {
         label_nama.text = $"{dataPemenang.tipe} {dataPemenang.characterName}";
         label_score.text = $"Total Score: {GameSetting.Instance.score}";
+
+        string username = GameManager.Instance.currentName;
+        int poin = GameSetting.Instance.score;
+
+        GameManager.Instance.SaveData(new UserRanking(username,poin));
     }
 }
