@@ -21,7 +21,8 @@ public class SoalManager : MonoBehaviour
 
     public SoalPertanyaan GetSoal()
     {
-        return allActiveSoals[UnityEngine.Random.Range(0, allSoals.Length)];
+        SoalPertanyaan _soal = allActiveSoals[UnityEngine.Random.Range(0, allActiveSoals.Length)];
+        return _soal;
     }
 }
 

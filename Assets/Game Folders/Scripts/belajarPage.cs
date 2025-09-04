@@ -29,6 +29,8 @@ public class belajarPage : Page
     [SerializeField] private TMP_Text[] isiMateri;
     [SerializeField] private int activeNumber = 1;
 
+    
+
     public enum kalkulasi
     {
         Penjumlahan,
@@ -75,6 +77,13 @@ public class belajarPage : Page
             activeNumber--;
             SetKalkulasi(activeKalkulasi);
         });
+
+        string fileId = "1SKguyyzjCSSNnmQjCw4B_7vL43swomzC";
+        string pdfUrl = "https://drive.google.com/uc?export=download&id=" + fileId;
+        string googleViewer = "https://docs.google.com/gview?embedded=true&url=" + pdfUrl;
+
+        
+        /*var webViewObject.LoadURL(googleViewer);*/
     }
 
     private void SetKalkulasi(kalkulasi activeKalkulasi)

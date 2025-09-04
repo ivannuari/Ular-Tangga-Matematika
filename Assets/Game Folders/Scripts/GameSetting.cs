@@ -55,7 +55,9 @@ public class GameSetting : MonoBehaviour
     {
         _currentType = tipe;
         GameManager.Instance.ChangeState(GameState.Soal);
-        OnSoalCreated?.Invoke(soalManager.GetSoal());
+
+        SoalPertanyaan _soal = soalManager.GetSoal();
+        OnSoalCreated?.Invoke(_soal);
     }
     public void CheckJawabanBenar(bool benar)
     {

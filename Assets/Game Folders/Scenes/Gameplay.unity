@@ -26926,6 +26926,102 @@ MonoBehaviour:
     - 36
     - 49
     jawaban: 3
+  - tipeSoal: 1
+    soal: '12 + 9 = '
+    opsi:
+    - 19
+    - 32
+    - 21
+    - 27
+    jawaban: 2
+  - tipeSoal: 1
+    soal: '23 + 32 = '
+    opsi:
+    - 75
+    - 54
+    - 45
+    - 57
+    jawaban: 2
+  - tipeSoal: 1
+    soal: '42 + 12 = '
+    opsi:
+    - 56
+    - 45
+    - 55
+    - 54
+    jawaban: 3
+  - tipeSoal: 2
+    soal: 14 - 7 =
+    opsi:
+    - 8
+    - 7
+    - 6
+    - 21
+    jawaban: 1
+  - tipeSoal: 2
+    soal: 32 - 10 =
+    opsi:
+    - 22
+    - 42
+    - 32
+    - 52
+    jawaban: 0
+  - tipeSoal: 2
+    soal: '24 - 8 = '
+    opsi:
+    - 16
+    - 17
+    - 15
+    - 18
+    jawaban: 0
+  - tipeSoal: 3
+    soal: '10 X 4 = '
+    opsi:
+    - 20
+    - 50
+    - 30
+    - 40
+    jawaban: 3
+  - tipeSoal: 3
+    soal: 11 X 3 =
+    opsi:
+    - 23
+    - 43
+    - 33
+    - 53
+    jawaban: 2
+  - tipeSoal: 3
+    soal: 15 X 2 =
+    opsi:
+    - 60
+    - 50
+    - 40
+    - 30
+    jawaban: 3
+  - tipeSoal: 4
+    soal: '24 : 6 ='
+    opsi:
+    - 3
+    - 4
+    - 5
+    - 6
+    jawaban: 1
+  - tipeSoal: 4
+    soal: '42 : 2 ='
+    opsi:
+    - 21
+    - 22
+    - 23
+    - 24
+    jawaban: 0
+  - tipeSoal: 4
+    soal: '50 : 5 ='
+    opsi:
+    - 20
+    - 10
+    - 5
+    - 15
+    jawaban: 1
 --- !u!1 &2097109518
 GameObject:
   m_ObjectHideFlags: 0
