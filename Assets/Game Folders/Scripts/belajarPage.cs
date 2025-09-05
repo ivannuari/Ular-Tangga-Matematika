@@ -23,13 +23,12 @@ public class belajarPage : Page
 
     [SerializeField] private GameObject[] panels;
     [SerializeField] private kalkulasi activeKalkulasi = kalkulasi.Penjumlahan;
+    [SerializeField] private GameObject[] materiPanels;
 
     [SerializeField] private TMP_Text judulKalkulasiText;
     [SerializeField] private TMP_Text judulNomorText;
     [SerializeField] private TMP_Text[] isiMateri;
     [SerializeField] private int activeNumber = 1;
-
-    
 
     public enum kalkulasi
     {
@@ -77,13 +76,6 @@ public class belajarPage : Page
             activeNumber--;
             SetKalkulasi(activeKalkulasi);
         });
-
-        string fileId = "1SKguyyzjCSSNnmQjCw4B_7vL43swomzC";
-        string pdfUrl = "https://drive.google.com/uc?export=download&id=" + fileId;
-        string googleViewer = "https://docs.google.com/gview?embedded=true&url=" + pdfUrl;
-
-        
-        /*var webViewObject.LoadURL(googleViewer);*/
     }
 
     private void SetKalkulasi(kalkulasi activeKalkulasi)
@@ -91,42 +83,63 @@ public class belajarPage : Page
         judulNomorText.text = $"{activeNumber}";
         judulKalkulasiText.text = activeKalkulasi.ToString();
 
-        string kalkulasiText = "+";
+        foreach (var item in materiPanels)
+        {
+            item.SetActive(false);
+        }
+
         switch (activeKalkulasi)
         {
             case kalkulasi.Penjumlahan:
-                kalkulasiText = "+";
+                materiPanels[0].SetActive(true);
                 break;
             case kalkulasi.Pengurangan:
-                kalkulasiText = "-";
+                materiPanels[1].SetActive(true);
                 break;
             case kalkulasi.Perkalian:
-                kalkulasiText = "x";
+                materiPanels[2].SetActive(true);
                 break;
             case kalkulasi.Pembagian:
-                kalkulasiText = ":";
+                materiPanels[3].SetActive(true);
                 break;
         }
-        for (int i = 0; i < isiMateri.Length; i++)
-        {
-            int hasil = 0;
-            switch (activeKalkulasi)
-            {
-                case kalkulasi.Penjumlahan:
-                    hasil = (i + 1) + activeNumber;
-                    break;
-                case kalkulasi.Pengurangan:
-                    hasil = (i + 1) - activeNumber;
-                    break;
-                case kalkulasi.Perkalian:
-                    hasil = (i + 1) * activeNumber;
-                    break;
-                case kalkulasi.Pembagian:
-                    hasil = (i + 1) / activeNumber;
-                    break;
-            }
-            isiMateri[i].text = $"{i + 1} {kalkulasiText} {activeNumber} = {hasil}";
-        }
+
+        /* string kalkulasiText = "+";
+         switch (activeKalkulasi)
+         {
+             case kalkulasi.Penjumlahan:
+                 kalkulasiText = "+";
+                 break;
+             case kalkulasi.Pengurangan:
+                 kalkulasiText = "-";
+                 break;
+             case kalkulasi.Perkalian:
+                 kalkulasiText = "x";
+                 break;
+             case kalkulasi.Pembagian:
+                 kalkulasiText = ":";
+                 break;
+         }
+         for (int i = 0; i < isiMateri.Length; i++)
+         {
+             int hasil = 0;
+             switch (activeKalkulasi)
+             {
+                 case kalkulasi.Penjumlahan:
+                     hasil = (i + 1) + activeNumber;
+                     break;
+                 case kalkulasi.Pengurangan:
+                     hasil = (i + 1) - activeNumber;
+                     break;
+                 case kalkulasi.Perkalian:
+                     hasil = (i + 1) * activeNumber;
+                     break;
+                 case kalkulasi.Pembagian:
+                     hasil = (i + 1) / activeNumber;
+                     break;
+             }
+             isiMateri[i].text = $"{i + 1} {kalkulasiText} {activeNumber} = {hasil}";
+         }*/
     }
 
     private void SetFrame(int index)
